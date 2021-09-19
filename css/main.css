@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --main-color: #ff6b81;
+    --color-hover: #ff5972;
+    --font-size: 2rem;
+}
+section{
+    width: 84%;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+}
+
+
+
+.header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.header .navbar a{
+    font-size: var(--font-size);
+    margin-left: 2rem;
+    color: var(--main-color);
+}
+.header .navbar a:hover{
+    color:var(--color-hover);
+}
+
+
+
+.food-search{
+    background-image: url(../image/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 6% 0;
+    text-align: center;
+}
+.food-search .container{
+    width: 84%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.food-search .container form .txt-search{
+    width: 50%;
+    padding: 1%;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+.food-search .container form .btn-search{
+    background-color: var(--main-color);
+    border:none;
+    padding: 1%;
+    border-radius: 0.5rem;
+    color: #fff;
+    margin-left: 2rem;
+}
+.food-search .container form .btn-search:hover{
+    background-color: var(--color-hover);
+}
+
+
+
+section h2{
+    text-align: center;
+    font-size: 3.5rem;
+    color: #555;
+    margin: 3rem 0;
+}
+.explore-food .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 4rem;
+}
+.explore-food .container .box{
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    border: 0.1rem solid rgba(0,0,0,0.3);
+    cursor: pointer;
+    border-radius: 2rem;
+}
+.explore-food .container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.explore-food .container .box h3{
+    position: absolute;
+    color: #fff;
+    font-size: 3rem;
+    bottom: 5%;
+    left: 13rem;
+}
+
+
+
+.food-menu{
+    background-color: #ececec;
+    padding-bottom: 5rem;
+}
+.food-menu h2{
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 5rem 0 2rem;
+    color: #555;
+    margin-bottom: 3rem;
+}
+.food-menu .container{
+    width: 84%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin: 0 auto 2rem auto;
+}
+.food-menu .container .box{
+    flex: 1 1 40rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    background-color: #fff;
+    padding: 2%;
+    display: flex;
+}
+.food-menu .container .box img{
+    border-radius: 1.5rem;
+    width: 20%;
+    height: 65%;
+}
+.food-menu .container .box .food-menu-content{
+    width: 70%;
+    margin-left: 3rem; 
+}
+.food-menu .container .box .food-menu-content h4{
+    font-size: 2rem;  
+}
+.food-menu .container .box .food-menu-content .price{
+    padding: 0.5rem 0;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.food-menu .container .box .food-menu-content .detail{
+    font-size: 1.5rem;
+    color: #747d8c;
+    padding: 0 0 2rem 0;
+}
+.food-menu .container .box .food-menu-content .btn-order{
+    padding: 0.5rem;
+    font-size: 2rem;
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 0.8rem;
+}
+.food-menu .container .box .food-menu-content .btn-order:hover{
+    background-color: #fd516a;
+}
+.food-menu .text-bottom{
+    text-align: center;
+}
+.food-menu .text-bottom a{
+    font-size: 2rem;
+    color: var(--main-color);
+}
+.food-menu .text-bottom a:hover{
+    color: #fd516a;
+}
+
+
+.footer{
+    padding: 1rem 0;
+    align-items: center;
+}
+.footer .link-icon,
+.footer h3{
+    padding: 0.5rem 0;
+    text-align: center;
+}
+.footer .link-icon a{
+    font-size: 3rem;
+    color: rgba(0, 10, 255, 0.8);
+    padding: 0 1rem;
+}
+.footer h3{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.footer h3 a{
+    color: var(--main-color);
+}
+.footer h3 a:hover{
+    color: #ff4d67;
+}
